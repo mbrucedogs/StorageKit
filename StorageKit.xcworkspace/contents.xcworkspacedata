@@ -7,4 +7,10 @@
    <FileRef
       location = "container:StorageKit.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Storages/StorageKitCoreData/StorageKitCoreData.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Storages/StorageKitRealm/StorageKitRealm.xcodeproj">
+   </FileRef>
 </Workspace>

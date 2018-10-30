@@ -162,12 +162,12 @@ public protocol StorageReadableContext: class {
         Since the return is a generic optional array, you must add the type of entities which you want to fetch explicitly. As you can see in the example above, we have specified the type `[MyEntity]?` as result type. Remember to use `?` since it may be an optional array.
      
         - Parameter predicate: `NSPredicate` object to filter the entity to fetch. Pass `nil` if you don't want any filter applied.
-        - Parameter sortDescriptors: Array of `SortDescriptor` to order the result. Pass `nil` if you don't want any order applied.
+        - Parameter sortDescriptors: Array of `SortingDescriptor` to order the result. Pass `nil` if you don't want any order applied.
         - Parameter completion: Closure which contains the entity fetched. It has as parameter an optional array which contains the fetch result.
         - Throws: StorageKitErrors.Entity.wrongType
     */
 
-    func fetch<T: StorageEntityType>(predicate: NSPredicate?, sortDescriptors: [SortDescriptor]?, completion: @escaping FetchCompletionClosure<T>) throws
+    func fetch<T: StorageEntityType>(predicate: NSPredicate?, sortDescriptors: [SortingDescriptor]?, completion: @escaping FetchCompletionClosure<T>) throws
 }
 
 public extension StorageReadableContext {

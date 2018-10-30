@@ -23,14 +23,14 @@
 //  THE SOFTWARE.
 //
 
-protocol ContextRepoType: class {
+public protocol ContextRepoType: class {
 	init(cleaningTimerInterval: Double?)
 
 	func store(context: StorageContext?, queue: DispatchQueue)
 	func retrieveQueue(for context: StorageContext) -> DispatchQueue?
 }
 
-final class ContextRepo {
+final public class ContextRepo {
 
 	var cleaningTimerInterval: Double = 3 * 60
 
@@ -38,7 +38,7 @@ final class ContextRepo {
 
 	private var cleaningTimer = Timer()
 
-	init(cleaningTimerInterval: Double? = nil) {
+    public init(cleaningTimerInterval: Double? = nil) {
         contextQueues = [:]
 
 		if let cleaningTimerInterval = cleaningTimerInterval {
@@ -62,13 +62,13 @@ final class ContextRepo {
 }
 
 extension ContextRepo: ContextRepoType {
-	func store(context: StorageContext?, queue: DispatchQueue) {
+    public func store(context: StorageContext?, queue: DispatchQueue) {
 		if let context = context {
 			contextQueues[context.identifier] = ContextQueue(context: context, queue: queue)
 		}
 	}
 
-	func retrieveQueue(for context: StorageContext) -> DispatchQueue? {
+    public func retrieveQueue(for context: StorageContext) -> DispatchQueue? {
 		return contextQueues[context.identifier]?.queue
 	}
 }

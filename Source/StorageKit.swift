@@ -28,64 +28,13 @@
     You don't need an istance of this class since has just a static method.
     This is a `final` class. It means that you cannot override it. You shouldn't need it.
 */
-public final class StorageKit {
 
-	/**
-        Type of storage supported by StorageKit. You must use this enum to create a new `Storage` object
-        with the method `addStorage(type:)`
-	*/
-	public enum StorageType {
-        /**
-            CoreData storage. It has as associated value the data model name.
-            Example:
-
-            ```
-            .CoreData("myDataModel")
-            ```
-        */
-        case CoreData(dataModelName: String)
-
-        /**
-            Realm storage type
-        */
-        case Realm
-    }
-
-	/**
-        This method is the entry point of `StorageKit`. It allows you to create a new `Storage` object.
-        The type of storage to create is specified as parameter of the method.
-        Since it's a static method, you don't need an istance of `StorageKit`.
-     
-        Example:
-
-        ```
-        let storage = StorageKit.addStorage(type: .Realm)
-        ```
-
-        - Parameter type: Type of storage to create
-        - Returns: `Storage` object
-	*/
-	public static func addStorage(type: StorageKit.StorageType) -> Storage {
-        switch type {
-        case .CoreData(let dataModelName):
-            return createCoreDataStorage(for: dataModelName)
-        case .Realm:
-            return createRealmStorage()
-        }
-        
-    }
-    
+public protocol Storagable{
+    var storage: Storage { get }
 }
 
-// MARK: - Storage method factories
-fileprivate extension StorageKit {
-    static func createCoreDataStorage(for dataModelName: String) -> CoreDataStorage {
-        var configuration = CoreDataConfiguration()
-        configuration.dataModelName = dataModelName
-        return CoreDataStorage(configuration: configuration)
-    }
-    
-    static func createRealmStorage() -> RealmDataStorage {
-        return RealmDataStorage()
+public final class StorageKit {
+    public static func addStorage(type: Storagable) -> Storage {
+       return type.storage
     }
 }

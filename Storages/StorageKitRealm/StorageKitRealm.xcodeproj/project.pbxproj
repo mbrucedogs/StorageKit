@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		405BF35A2188E06D00ED4B7A /* StorageKitRealm.h in Headers */ = {isa = PBXBuildFile; fileRef = 405BF3582188E06D00ED4B7A /* StorageKitRealm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		405BF3A62188E16300ED4B7A /* RealmContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405BF39C2188E16300ED4B7A /* RealmContext.swift */; };
+		405BF3A72188E16300ED4B7A /* RealmDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405BF39D2188E16300ED4B7A /* RealmDataStorage.swift */; };
+		405BF3A82188E16300ED4B7A /* Results+RealmResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405BF39F2188E16300ED4B7A /* Results+RealmResultType.swift */; };
+		405BF3A92188E16300ED4B7A /* Realm+RealmType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405BF3A02188E16300ED4B7A /* Realm+RealmType.swift */; };
+		405BF3AA2188E16300ED4B7A /* RealmContext+StorageContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405BF3A12188E16300ED4B7A /* RealmContext+StorageContext.swift */; };
+		405BF3AB2188E16300ED4B7A /* Object+StorageEntityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405BF3A22188E16300ED4B7A /* Object+StorageEntityType.swift */; };
+		405BF3AC2188E16300ED4B7A /* RealmResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405BF3A42188E16300ED4B7A /* RealmResultType.swift */; };
+		405BF3AD2188E16300ED4B7A /* RealmType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405BF3A52188E16300ED4B7A /* RealmType.swift */; };
+		405BF42E21890AFE00ED4B7A /* StorageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405BF42D21890AFE00ED4B7A /* StorageKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		405BF3552188E06D00ED4B7A /* StorageKitRealm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StorageKitRealm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		405BF3582188E06D00ED4B7A /* StorageKitRealm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StorageKitRealm.h; sourceTree = "<group>"; };
+		405BF3592188E06D00ED4B7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		405BF3972188E14E00ED4B7A /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		405BF3982188E14E00ED4B7A /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		405BF39C2188E16300ED4B7A /* RealmContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmContext.swift; sourceTree = "<group>"; };
+		405BF39D2188E16300ED4B7A /* RealmDataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmDataStorage.swift; sourceTree = "<group>"; };
+		405BF39F2188E16300ED4B7A /* Results+RealmResultType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Results+RealmResultType.swift"; sourceTree = "<group>"; };
+		405BF3A02188E16300ED4B7A /* Realm+RealmType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Realm+RealmType.swift"; sourceTree = "<group>"; };
+		405BF3A12188E16300ED4B7A /* RealmContext+StorageContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RealmContext+StorageContext.swift"; sourceTree = "<group>"; };
+		405BF3A22188E16300ED4B7A /* Object+StorageEntityType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Object+StorageEntityType.swift"; sourceTree = "<group>"; };
+		405BF3A42188E16300ED4B7A /* RealmResultType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmResultType.swift; sourceTree = "<group>"; };
+		405BF3A52188E16300ED4B7A /* RealmType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmType.swift; sourceTree = "<group>"; };
+		405BF42D21890AFE00ED4B7A /* StorageKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = StorageKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		405BF3522188E06D00ED4B7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				405BF42E21890AFE00ED4B7A /* StorageKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		405BF34B2188E06D00ED4B7A = {
+			isa = PBXGroup;
+			children = (
+				405BF3572188E06D00ED4B7A /* StorageKitRealm */,
+				405BF3562188E06D00ED4B7A /* Products */,
+				405BF3962188E14E00ED4B7A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		405BF3562188E06D00ED4B7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				405BF3552188E06D00ED4B7A /* StorageKitRealm.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		405BF3572188E06D00ED4B7A /* StorageKitRealm */ = {
+			isa = PBXGroup;
+			children = (
+				405BF39E2188E16300ED4B7A /* Extensions */,
+				405BF3A32188E16300ED4B7A /* StackObjects */,
+				405BF39C2188E16300ED4B7A /* RealmContext.swift */,
+				405BF39D2188E16300ED4B7A /* RealmDataStorage.swift */,
+				405BF3582188E06D00ED4B7A /* StorageKitRealm.h */,
+				405BF3592188E06D00ED4B7A /* Info.plist */,
+			);
+			path = StorageKitRealm;
+			sourceTree = "<group>";
+		};
+		405BF3962188E14E00ED4B7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				405BF42D21890AFE00ED4B7A /* StorageKit.framework */,
+				405BF3972188E14E00ED4B7A /* Realm.framework */,
+				405BF3982188E14E00ED4B7A /* RealmSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		405BF39E2188E16300ED4B7A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				405BF39F2188E16300ED4B7A /* Results+RealmResultType.swift */,
+				405BF3A02188E16300ED4B7A /* Realm+RealmType.swift */,
+				405BF3A12188E16300ED4B7A /* RealmContext+StorageContext.swift */,
+				405BF3A22188E16300ED4B7A /* Object+StorageEntityType.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		405BF3A32188E16300ED4B7A /* StackObjects */ = {
+			isa = PBXGroup;
+			children = (
+				405BF3A42188E16300ED4B7A /* RealmResultType.swift */,
+				405BF3A52188E16300ED4B7A /* RealmType.swift */,
+			);
+			path = StackObjects;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		405BF3502188E06D00ED4B7A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				405BF35A2188E06D00ED4B7A /* StorageKitRealm.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		405BF3542188E06D00ED4B7A /* StorageKitRealm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 405BF35D2188E06D00ED4B7A /* Build configuration list for PBXNativeTarget "StorageKitRealm" */;
+			buildPhases = (
+				405BF3502188E06D00ED4B7A /* Headers */,
+				405BF3512188E06D00ED4B7A /* Sources */,
+				405BF3522188E06D00ED4B7A /* Frameworks */,
+				405BF3532188E06D00ED4B7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StorageKitRealm;
+			productName = StorageKitRealm;
+			productReference = 405BF3552188E06D00ED4B7A /* StorageKitRealm.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		405BF34C2188E06D00ED4B7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Verizon;
+				TargetAttributes = {
+					405BF3542188E06D00ED4B7A = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
+				};
+			};
+			buildConfigurationList = 405BF34F2188E06D00ED4B7A /* Build configuration list for PBXProject "StorageKitRealm" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 405BF34B2188E06D00ED4B7A;
+			productRefGroup = 405BF3562188E06D00ED4B7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				405BF3542188E06D00ED4B7A /* StorageKitRealm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		405BF3532188E06D00ED4B7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		405BF3512188E06D00ED4B7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				405BF3A62188E16300ED4B7A /* RealmContext.swift in Sources */,
+				405BF3AB2188E16300ED4B7A /* Object+StorageEntityType.swift in Sources */,
+				405BF3A82188E16300ED4B7A /* Results+RealmResultType.swift in Sources */,
+				405BF3AC2188E16300ED4B7A /* RealmResultType.swift in Sources */,
+				405BF3A72188E16300ED4B7A /* RealmDataStorage.swift in Sources */,
+				405BF3AD2188E16300ED4B7A /* RealmType.swift in Sources */,
+				405BF3A92188E16300ED4B7A /* Realm+RealmType.swift in Sources */,
+				405BF3AA2188E16300ED4B7A /* RealmContext+StorageContext.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		405BF35B2188E06D00ED4B7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		405BF35C2188E06D00ED4B7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		405BF35E2188E06D00ED4B7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = StorageKitRealm/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.verizon.StorageKitRealm;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		405BF35F2188E06D00ED4B7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = StorageKitRealm/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.verizon.StorageKitRealm;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		405BF34F2188E06D00ED4B7A /* Build configuration list for PBXProject "StorageKitRealm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				405BF35B2188E06D00ED4B7A /* Debug */,
+				405BF35C2188E06D00ED4B7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		405BF35D2188E06D00ED4B7A /* Build configuration list for PBXNativeTarget "StorageKitRealm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				405BF35E2188E06D00ED4B7A /* Debug */,
+				405BF35F2188E06D00ED4B7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 405BF34C2188E06D00ED4B7A /* Project object */;
+}
